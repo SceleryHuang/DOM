@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // window.onload = function () {
+        //     var oUl = document.getElementById('oul');
+        //     var iL = oUl.getElementsByTagName('li');
+        //
+        //     alert(oUl.parentNode);
+        //
+        //     for(var i = 0;i<iL.length;i++){
+        //         iL[i].onclick = function () {
+        //             this.style.display = 'none';
+        //         }
+        //     }
+        //
+        // }
+        window.onload = function () {
+
+            var aA = document.getElementsByTagName('a');
+
+            for(var i = 0;i<aA.length;i++){
+                aA[i].onclick = function () {
+                    this.parentNode.style.display = 'none';
+                }
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <ul id = 'oul'>
+        <li>regagah<a href="javascript:;">隐藏</a></li>
+        <li>regagah<a href="javascript:;">隐藏</a></li>
+        <li>regagah<a href="javascript:;">隐藏</a></li>
+        <li>regagah<a href="javascript:;">隐藏</a></li>
+
+    </ul>
+</body>
+</html>
